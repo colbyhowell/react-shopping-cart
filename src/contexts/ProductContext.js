@@ -1,13 +1,5 @@
-import React, { createContext, useState } from "react";
+import { createContext } from "react";
 
-export const ProductContext = createContext();
+const ProductContext = createContext();
 
-export const ProductProvider = props => {
-  const [products, addItem] = useState();
-
-  return (
-    <ProductContext.Provider value={(products, addItem)}>
-      {props.children}
-    </ProductContext.Provider>
-  );
-};
+export default ProductContext;

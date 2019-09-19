@@ -9,12 +9,8 @@ import { CartContext } from "./contexts/CartContext";
 const AppWithRouter = withRouter(App);
 
 ReactDOM.render(
-  <ProductContext>
-    <CartContext>
-      <Router>
-        <AppWithRouter />
-      </Router>
-    </CartContext>
-  </ProductContext>,
+  <Router>
+    <AppWithRouter />
+  </Router>,
   document.getElementById("root")
 );
